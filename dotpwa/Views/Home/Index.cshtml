@@ -2,7 +2,30 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    .btn {
+        background-color: #FF8494;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .btn:hover {
+        opacity: 1
+    }
+</style>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Click on the button below to register your work</p>
+</div>
+<div style="text-align:center; width:100%; background-color:lightgoldenrodyellow;">
+    <button class="btn" onclick="window.location.href='http://localhost:60802/Home/Log';">LOG WORK</button>
 </div>
